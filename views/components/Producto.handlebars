@@ -1,0 +1,10 @@
+<!-- Productos -->
+{{#each productos }}
+<div id="{{this.descripcion}}" class="card m-4 col-3 p-5 rounded-sm grayscale" data-toggle="modal" data-target="#modal"
+    onclick="imageSelected({{this.descripcion}})">
+    <img class="card-img-top resize" src="{{this.imagen}}" alt="{{this.descripcion}}">
+    <div class="card-body">
+        <h5 class="text-center font-weight-bold mb-0">{{this.descripcion}}</h5>
+    </div>
+</div>
+{{/each}}
